@@ -66,10 +66,7 @@ class _LoginState extends State<Login> {
     );
 
 
-    void login() {
-      
-    }
-
+    
     var doLogin = () {
       final form = formKey.currentState;
 

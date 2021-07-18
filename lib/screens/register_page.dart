@@ -53,6 +53,7 @@ class _RegisterPageState extends State<RegisterPage> {
     );
 
     final setRegionId = TextFormField(
+      
       autofocus: false,
       validator: (value) =>
           value!.isEmpty ? "Your region id is required" : null,
