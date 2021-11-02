@@ -17,7 +17,6 @@ class _RegisterPageState extends State<RegisterPage> {
 
   late String _name, _userEmail, _password, _confirmPassword;
   late String _regionId;
-
   @override
   Widget build(BuildContext context) {
     AuthProvider auth = Provider.of<AuthProvider>(context);
@@ -46,7 +45,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
     final confirmPassword = TextFormField(
       autofocus: false,
-      validator: (value) => value!.isEmpty ? "Your password is required" : null,
+      validator: (value) => value!.isEmpty ? "password is required" : null,
       onSaved: (value) => _confirmPassword = value!,
       obscureText: true,
       decoration: buildInputDecoration("Confirm password", Icons.lock),
