@@ -23,7 +23,7 @@ class _LoginState extends State<Login> {
 
     final usernameField = TextFormField(
       autofocus: false,
-      validator: (value) => value!.isEmpty ? "Please enter password" : null,
+      validator: (value) => value!.isEmpty ? "enter password" : null,
       onSaved: (value) => _username = value!,
       decoration: buildInputDecoration("Confirm password", Icons.email),
     );
@@ -31,7 +31,7 @@ class _LoginState extends State<Login> {
     final passwordField = TextFormField(
       autofocus: false,
       obscureText: true,
-      validator: (value) => value!.isEmpty ? "Please enter password" : null,
+      validator: (value) => value!.isEmpty ? "enter password" : null,
       onSaved: (value) => _password = value!,
       decoration: buildInputDecoration("Confirm password", Icons.lock),
     );
